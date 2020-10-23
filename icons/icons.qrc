@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Prefix">
+        <file>internet-earth-globe-pngrepo-com.png</file>
+        <file>monitor-computer-pngrepo-com.png</file>
+        <file>connected.png</file>
+    </qresource>
+</RCC>

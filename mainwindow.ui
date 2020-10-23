@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>800</width>
      <height>22</height>
     </rect>
    </property>
@@ -29,8 +29,17 @@
     </property>
    </widget>
    <widget class="QMenu" name="menu_O">
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="title">
      <string>在线(&amp;O)</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
     </property>
     <addaction name="action_C"/>
     <addaction name="action_P"/>
@@ -45,20 +54,32 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="action_C"/>
+   <addaction name="action_P"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="action_C">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/Prefix/internet-earth-globe-pngrepo-com.png</normaloff>:/Prefix/internet-earth-globe-pngrepo-com.png</iconset>
+   </property>
    <property name="text">
     <string>连接(&amp;C)</string>
    </property>
   </action>
   <action name="action_P">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/Prefix/monitor-computer-pngrepo-com.png</normaloff>:/Prefix/monitor-computer-pngrepo-com.png</iconset>
+   </property>
    <property name="text">
     <string>参数设置(&amp;P)</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

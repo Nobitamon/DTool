@@ -25,13 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        commparasettingdialog.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
+        commparasettingdialog.h \
         mainwindow.h
 
 FORMS += \
+        commparasettingdialog.ui \
         mainwindow.ui
 
 # Default rules for deployment.
@@ -41,3 +44,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     README.md
+
+RESOURCES += \
+    icons/icons.qrc
