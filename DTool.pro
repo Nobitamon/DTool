@@ -3,14 +3,18 @@
 # Project created by QtCreator 2020-10-22T17:08:25
 #
 #-------------------------------------------------
+VERSION = 1.1.5
 
-QT       += core gui network
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
+
+QT       += core gui network charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = DTool
 TEMPLATE = app
 
+RC_ICONS = CNGTE.ico
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -25,13 +29,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        callout.cpp \
         commparasettingdialog.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        packet.cpp
 
 HEADERS += \
+        callout.h \
         commparasettingdialog.h \
-        mainwindow.h
+        mainwindow.h \
+        packet.h
 
 FORMS += \
         commparasettingdialog.ui \
